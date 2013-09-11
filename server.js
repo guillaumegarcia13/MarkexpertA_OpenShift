@@ -2,6 +2,7 @@
 //  OpenShift sample Node application
 var express = require('express');
 var fs      = require('fs');
+var guigui  = require('./guigui.js');   // (+) GGAR 12-Sep-2013
 
 
 /**
