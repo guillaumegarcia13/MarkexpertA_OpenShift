@@ -25,6 +25,7 @@
   },
 
   "dependencies": {
+    "guigui": ""
   },
   "devDependencies": {},
   "bundleDependencies": [],
