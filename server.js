@@ -2,7 +2,7 @@
 //  OpenShift sample Node application
 var express = require('express');
 var fs      = require('fs');
-//var guigui  = require('./guigui.js');   // (+) GGAR 12-Sep-2013
+var guigui  = require('./guigui');   // (+) GGAR 12-Sep-2013
 
 
 /**
@@ -104,6 +104,10 @@ var SampleApp = function() {
         self.routes['/asciimo'] = function(req, res) {
             var link = "http://i.imgur.com/kmbjB.png";
             res.send("<html><body><img src='" + link + "'></body></html>");
+        };
+        
+        self.routes['/guigui'] = function(req, res) {
+            res.send(guigui.execute() + "...");
         };
 
         self.routes['/'] = function(req, res) {
